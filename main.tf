@@ -5,7 +5,7 @@ provider "aws" {
 provider "hcp" {}
 
 data "hcp_packer_version" "ubuntu" {
-  bucket_name  = "learn-packer-run-tasks"
+  bucket_name  = "ubuntu-image"
   channel_name = "production"
 }
 
