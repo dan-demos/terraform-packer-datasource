@@ -6,7 +6,7 @@ provider "hcp" {}
 
 data "hcp_packer_version" "ubuntu" {
   bucket_name  = "ubuntu-image"
-  channel_name = "production"
+  channel_name = var.channel
 }
 
 data "hcp_packer_artifact" "ubuntu_us_east_2" {
